@@ -3,6 +3,8 @@
 
 EAPI=6
 
+inherit git-r3
+
 DESCRIPTION="Early out-of-memory killer that runs in user-space"
 HOMEPAGE="https://github.com/rfjakob/earlyoom"
 
@@ -11,11 +13,13 @@ EGIT_BRANCH="master"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
+
+DISTDDIR=$WORKDIR
 
 src_install() {
 	dobin earlyoom
