@@ -1,6 +1,5 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -17,6 +16,6 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-    dobin earlyoom
-    doinitd ${FILESDIR}/earlyoom
+	dobin earlyoom
+	doinitd "${FILESDIR}/earlyoom"
 }
